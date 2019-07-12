@@ -1,0 +1,213 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+h1 {
+    font-family: "Kaushan script", fantasy;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    color: rgba(190, 43, 43, 0.945);
+}
+.row {
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(255, 196, 0);
+    padding: 20px 0px 0px 0px;
+    transform: rotateZ(1deg);
+    top: -15px;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding-left: 170px;
+}
+
+.nav-item {
+    padding: 0 1.5rem;
+}
+
+
+/* TITLE */
+#title {
+    background-color: rgb(255, 211, 65);
+    padding-bottom: 8%;
+    padding-top: 100px;
+    text-align: left;
+}
+.container-fluid {
+    padding: 2% 10%;
+}
+.title-head{
+    margin-top: 0;
+    padding-top: 0;
+    padding: 30px 0px 40px;
+    transform: rotate(-3deg);
+}
+/* Download Buttons */
+.download-btn {
+    margin: 5% 3% 0%;
+}
+/* Title Image */
+.title-img {
+    transform: rotate(15deg);
+    height: 600px;
+    padding-top: 20px;
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* FEATURES */
+#features {
+    position: relative;
+    padding: 70px 120px;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    /* Features appears above title-img because it is generated later
+    This means we don't have to use the z-index */
+    background-color: white;
+}
+.perk-img {
+    color: rgb(255, 223, 119);
+    display: block;
+    margin: 0 auto 20px;
+    font-size: 100px;
+}
+.perk-img:hover {
+    color: rgb(255, 196, 0);
+}
+.perk {
+    padding: 30px 60px 0;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+    background-color: rgb(255, 214, 79);
+    padding: 50px;
+    height: 650px;
+}
+.carousel-inner {
+    padding: auto;
+    height: 500px;
+    background-color: rgb(255, 218, 97);
+    border-radius: 10%;
+    padding: 0 200px;
+    height: 550px;
+}
+.carousel {
+    padding: 20px;
+}
+.testimonial-text {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px rgba(190, 43, 43, 0.945);
+}
+.testimonial-img {
+    border-radius: 40%;
+    height: 20rem;
+    padding: 15px 0;
+}
+#testimonials em {
+    display: block;
+}
+
+/* PRESS */
+#press {
+    background-color: rgb(255, 214, 79);
+    padding-bottom: 40px;
+}
+.press-logo {
+    width: 10%;
+    opacity: .7;
+    margin: 0 50px;
+}
+
+/* PRICING */
+#pricing {
+    padding: 50px 100px;
+}
+.card {
+    opacity: .8;
+    box-shadow: 0;
+    margin-bottom: 400px;
+}
+.card:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 4px 4px rgb(255, 196, 0);
+}
+.price-col {
+    padding: 15px 10px;
+}
+
+
+/* FOOTER */
+#cta {
+    background-color: rgb(255, 214, 79);
+    padding: 10px 0 1px 0;
+    border-radius: 10% 10% 0% 0%;
+}
+#cta .btn {
+    margin-top:5px;
+}
+
+
+
+@media (max-width: 991px) {
+    /* NAVBAR */
+    .navbar-brand{
+        padding-left: 20px;
+    }
+    .navbar-collapse {
+        background-color: darkgoldenrod;
+    }
+    /* TITLE */
+    #title {
+        padding-bottom: 400px;
+        text-align: center;
+    }
+    .title-head {
+        padding-bottom: 0;
+    }
+    .title-img {
+        left: 200px;
+        top: 20px;
+        height: 400px;
+    }
+    /* TESTIMONIAL */
+    #testimonials {
+        height: 600px;
+    }
+    .testimonial-text {
+        font-size: 1.2rem;
+    }
+    .carousel-inner {
+        height: 500px;
+        padding: 0 100px;
+    }
+    /* PRESS */
+    .press-logo {
+        width: 15%;
+        margin: 20px;
+    }
+}

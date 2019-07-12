@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Blackwater Exp. Corps</title>
+
+  <!--Style Sheets-->
+    <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Personal-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,900|Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!--FontAwesome Icons-->
+  <script src="https://kit.fontawesome.com/99f0f56f6b.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+
+
+  <!-- Nav Bar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark"> <!--Predefined Bootstrap classes-->
+    <a class="navbar-brand " href="">Blackwater Exp. Corps</a>
+  <button class="navbar-toggler" data-target="#drop" data-toggle="collapse" aria-controls="drop" aria-expanded="false" aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="drop">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#features">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonials">Testimonies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#title">Download</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+
+  <section id="title" class="container-fluid">
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="col-12 title-head">Find your companions today!</h1>
+        <button type="button" class="btn btn-danger btn-lg download-btn"><i class="fab fa-amazon"></i> Order Tome on Amazon</button>
+        <button type="button" class="btn btn-light btn-lg download-btn"><i class="fab fa-connectdevelop"></i> Use directly with HEXXICON</button>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="row" id="features">
+
+    <div class="col-lg-4 col-md-6 perk">
+      <i class="fas fa-check-double perk-img"></i>
+      <h3>Easy to use.</h3>
+      <p>So easy to use, even your familiar could do it.</p>
+   </div>
+
+    <div class="col-lg-4 col-md-6 perk">
+      <i class="fab fa-staylinked perk-img"></i>
+      <h3>Elite Clientele</h3>
+      <p>We have companions hailing from Ysgramor's 300 and beyond.</p>
+    </div>
+  
+    <div class="col-lg-4 col-md-12 perk">
+      <i class="fas fa-shield-alt perk-img"></i>
+      <h3>Guaranteed to work.</h3>
+      <p>You'll create a legendary party for the ages.</p>
+  </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <!-- -ride==automatic (carousel) or false (manual) ; -interval==time -->
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">"I no longer have to crawl bars in search of a team - I found my party right here on Blackwater."</h2>
+          <img class="testimonial-img" src="images/fire-sorc.jpg" alt="Traveller-profile"><br>
+          <em>Tellurin Esper, level 11 wizard</em>
+        </div>
+        <div class="carousel-item">
+            <h2 class="testimonial-text">"I used to roam the streets of Emon, picking pockets. Now? I'm a god damn hero."</h2>
+            <img class="testimonial-img" src="images/knife-rogue.jpg" alt="lady-profile">
+            <em>Eleanor, level 31 rogue</em>
+        </div>
+      </div>
+      <!-- Aria == screen reader (hidden so it doesn't state the entire class?) -->
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- <span class="sr-only">Previous</span> -->
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!-- <span class="sr-only">Next</span> -->
+      </a>
+      <!-- Commented out text == screen reader only text -->
+
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+
+    <h2>A Plan for Every Hero's Needs</h2>
+    <p>Simple and affordable price plans to forge your crew.</p>
+
+    <div class="card-deck row">
+      <div class="price-col col-lg-4 col-md-6"> 
+        <div class="card">
+          <div class="card-header">
+            <h3>Streetside Magician</h3>
+            <p>He'll do his best... heh...</p>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-outline-warning">Sign Up</button>
+          </div>
+        </div>
+      </div> 
+      <div class="price-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>The Archivist</h3>
+            <p>He'll find you your match... eventually...</p>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-outline-warning">Get Started</button>
+          </div>
+        </div>
+      </div> 
+      <div class="price-col col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Oracle</h3>
+            <p>She'll find you your fated party.</p>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-outline-warning">Contact Her</button>
+          </div>
+          </div>
+      </div>
+ 
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h1>Find your companions today!</h1>
+    <button type="button" class="btn btn-danger download-btn"><i class="fab fa-amazon"></i> Order Tome on Amazon</button>
+    <button type="button" class="btn btn-light download-btn"><i class="fab fa-connectdevelop"></i> Use directly with HEXXICON</button>
+    <footer id="footer">
+      <p style="padding-top: 20px;">© Copyright 2019 Blackwater Exploration Corps</p>
+    </footer>
+  
+</body>
+
+</html>
