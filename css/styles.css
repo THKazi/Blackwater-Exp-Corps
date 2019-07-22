@@ -54,9 +54,6 @@ p {
     padding-top: 100px;
     text-align: left;
 }
-.container-fluid {
-    padding: 2% 10%;
-}
 .title-head{
     margin-top: 0;
     padding-top: 0;
@@ -81,7 +78,7 @@ p {
 #features {
     position: relative;
     padding: 70px 120px;
-    margin: 0;
+    margin: 10px;
     width: 100%;
     height: 500px;
     /* Features appears above title-img because it is generated later
@@ -183,7 +180,7 @@ p {
     }
     /* TITLE */
     #title {
-        padding-bottom: 400px;
+        padding-bottom: 450px;
         text-align: center;
     }
     .title-head {
@@ -194,6 +191,9 @@ p {
         top: 20px;
         height: 400px;
     }
+    #features {
+        margin-bottom: 400px;
+    }
     /* TESTIMONIAL */
     #testimonials {
         height: 600px;
@@ -203,7 +203,7 @@ p {
     }
     .carousel-inner {
         height: 500px;
-        padding: 0 100px;
+        padding: 0 0;
     }
     /* PRESS */
     .press-logo {

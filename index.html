@@ -49,13 +49,13 @@
   </nav>
 
 
-  <section id="title" class="container-fluid">
+  <section id="title" class="">
     <!-- Title -->
     <div class="row">
       <div class="col-lg-6">
         <h1 class="col-12 title-head">Find your companions today!</h1>
-        <button type="button" class="btn btn-danger btn-lg download-btn"><i class="fab fa-amazon"></i> Order Tome on Amazon</button>
-        <button type="button" class="btn btn-light btn-lg download-btn"><i class="fab fa-connectdevelop"></i> Use directly with HEXXICON</button>
+        <button type="button" class="btn btn-danger btn-lg download-btn" onclick="button();"><i class="fab fa-amazon"></i> Order Tome on Amazon</button>
+        <button type="button" class="btn btn-light btn-lg download-btn" onclick="button();"><i class="fab fa-connectdevelop"></i> Use directly with HEXXICON</button>
       </div>
       <div class="col-lg-6">
         <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
@@ -157,7 +157,7 @@
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-outline-warning">Sign Up</button>
+            <button type="button" class="btn btn-lg btn-outline-warning" onclick="button();">Sign Up</button>
           </div>
         </div>
       </div> 
@@ -172,7 +172,7 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-outline-warning">Get Started</button>
+            <button type="button" class="btn btn-lg btn-outline-warning" onclick="button();">Get Started</button>
           </div>
         </div>
       </div> 
@@ -188,7 +188,7 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-outline-warning">Contact Her</button>
+            <button type="button" class="btn btn-lg btn-outline-warning" onclick="button();">Contact Her</button>
           </div>
           </div>
       </div>
@@ -204,12 +204,17 @@
   <section id="cta">
 
     <h1>Find your companions today!</h1>
-    <button type="button" class="btn btn-danger download-btn"><i class="fab fa-amazon"></i> Order Tome on Amazon</button>
-    <button type="button" class="btn btn-light download-btn"><i class="fab fa-connectdevelop"></i> Use directly with HEXXICON</button>
+    <button type="button" class="btn btn-danger download-btn"><i class="fab fa-amazon" onclick="button();"></i> Order Tome on Amazon</button>
+    <button type="button" class="btn btn-light download-btn"><i class="fab fa-connectdevelop" onclick="button();"></i> Use directly with HEXXICON</button>
     <footer id="footer">
       <p style="padding-top: 20px;">© Copyright 2019 Blackwater Exploration Corps</p>
     </footer>
   
 </body>
 
+<script>
+  function button() {
+    alert("This button isn't functional - this is just a show page :P");
+  }
+</script>
 </html>
